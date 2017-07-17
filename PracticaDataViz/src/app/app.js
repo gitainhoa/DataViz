@@ -49,36 +49,6 @@ angular
 
         });
 
-      this.graficoMass = {data:{id:1},options:{}}
-
-      this.graficoMass.options = {
-
-        chart: {
-          type: 'pieChart',
-          height: 500,
-          x: function(d){return d.key;},
-          y: function(d){return d.y;},
-          showLabels: true,
-          duration: 500,
-          labelThreshold: 0.01,
-          labelSunbeamLayout: true,
-          legend: {
-            margin: {
-              top: 5,
-              right: 35,
-              bottom: 5,
-              left: 0
-            }
-          }
-        }
-      };
-
-      $http.get("http://localhost:7003/data/api/mass")
-        .then((response) => {
-
-          this.graficoMass.data = response.data
-
-        });
 
     }
   });

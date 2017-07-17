@@ -4,7 +4,7 @@ Esta práctica consistirá en dos partes: app cliente (con Angular.js) y servido
 # Para arrancar el cliente:
 
 ```bash
-  git clone https://github.com/gitainhoa/DataViz.git
+  git clone https://github.com/gitainhoa/DataViz.PracticaDataViz.git
   bower i
   npm i
   npm run serve
